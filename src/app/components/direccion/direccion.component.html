@@ -1,0 +1,31 @@
+<app-header></app-header>
+<app-temperatura></app-temperatura>
+<div class="contenedor-principal-direccion">
+  <div><img class="imagen" [src]="producto.imagen" alt="" /></div>
+  <form class="fomulario" (ngSubmit)="agregarPedido()">
+    <div class="nombre">{{ producto.nombre }}</div>
+    <div class="precio">
+      {{ producto.precio | currency : "$" : "symbol" : "1.0-0" }}
+    </div>
+    <div class="cantidad" >
+        <input type="number" [(ngModel)]="cantidad" name="cantidad" required value="1" placeholder="Cantidad"  min="1">
+    </div>
+    <div class="cédula">
+        <input type="text" [(ngModel)]="cedula" name="cedula" placeholder="Cédula" maxlength="10" required>
+    </div>
+    <div class="nombre-cliente">
+        <input type="text" [(ngModel)]="nombrecliente" name="nombrecliente" placeholder="Nombre completo" required>
+    </div>
+    <div class="celular">
+        <input type="text" [(ngModel)]="celular" name="celular" placeholder="Número de celular" maxlength="10" required>
+    </div>
+    <div class="direccion">
+        <input type="text" [(ngModel)]="direccion" name="direccion" placeholder="Dirección Ej: Barrio Miramar Cra 2 calle 5" required>
+    </div>
+    <div class="boton-confirmar">
+        <button mat-raised-button color="warn" [disabled]="cantidad < 1 || cedula === '' || nombrecliente === '' || celular === '' || direccion === '' " >Confirmar ya</button>
+    </div>
+
+</form>
+</div>
+<app-footer></app-footer>

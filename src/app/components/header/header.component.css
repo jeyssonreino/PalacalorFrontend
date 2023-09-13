@@ -1,0 +1,67 @@
+/*Estilos para el contenedor principal del header qu eincluye el logo y las opciones */
+.contenedor-header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #F00000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+/*Estilos para el logo de la aplicacion ubicado en la cabecera */
+.logo-header{
+    margin: 1px 0px 1px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-family: 'Cherry Bomb One';
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 10%;
+
+}
+/*Estillos para el link que es el mismo logo, pero se le quita los estilos por defecto*/
+p a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/*Estilos para el contenedor de opciones*/
+.opciones-header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10%;  
+}
+/*Estilos para quitar los que vienes por defecto de las listas html*/
+ul{
+    list-style: none;
+}
+
+/*Estilos para quitar los que vienes por defecto de los links*/
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+/*Estilos para el comportamiento del header en pantallas mas pequeñas*/
+@media screen and (max-width: 768px){
+
+    .logo-header{
+        margin-left: 0%;
+    }
+    .contenedor-header{
+        justify-content: center;
+    }
+    .opciones-header{
+        display: none;
+    }
+
+}

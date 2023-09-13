@@ -1,0 +1,10 @@
+<!--Estructura de la información de la tmepratura y sencacion termica en sahagun
+utilizando apis extrenas: openweathermap.org -->
+<div *ngIf="temperatura" class="informacion-de-temperatura">
+    <div class="temperatura">
+        <p><i class="fa-solid fa-sun"></i>Sahagún: {{temperatura.main.temp | number: '1.0-0'}} °C</p>
+    </div>
+    <div class="sensacion-termica">
+        <p>{{ mostrarSensacionTermica() }}</p>
+    </div>
+</div>

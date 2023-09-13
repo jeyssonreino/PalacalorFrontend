@@ -1,0 +1,22 @@
+.contenedor-principal-confrimacion {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 0% 10px 0px 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .imagen {
+    width: 150px;
+  }
+}

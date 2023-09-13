@@ -1,0 +1,10 @@
+<!--Listado de los productos-->
+<div class="lista-de-productos">
+    <div class="producto" *ngFor="let producto of productos">
+        <div class="imagen-producto"> <img class="imagen" [src]="producto.imagen" alt=""></div>
+        <div class="precio-producto"><p class="precio">{{ producto.precio | currency:'$':'symbol':'1.0-0' }}</p></div>
+        <div class="nombre-producto">{{producto.nombre}}</div>
+        <div class="boton-comprar-producto"><button mat-stroked-button (click)="redirigirADireccion(producto.id)" class="boton">Pedir ya </button></div>
+    </div>
+</div>
+    

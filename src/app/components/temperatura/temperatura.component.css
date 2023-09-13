@@ -1,0 +1,76 @@
+/*Estilos para el contenedor principal para mostrar la temperatura y la sensación térmica*/
+.informacion-de-temperatura{
+    background-color: #880e08;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 30px 30px 30px;
+
+
+}
+/*Estilos para el contenedor de la temperatura */
+.temperatura{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+
+}
+/*Estilos para el contenedor de la sensación térmica */
+.sensacion-termica{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+
+}
+
+/*Estilos para el icono o imagen del sol utilizando la calse que proporciona awnsome*/
+
+.fa-solid{
+    color: yellow;
+    margin-right: 10px;
+}
+
+/*Estilos para el comportamineto en las  pantallas grandes */
+
+@media screen and (min-width:1200px){
+    .informacion-de-temperatura{
+        height: 20px;
+    }
+
+    
+}
+
+/*Estilos para el comportamineto en las  pantallas medianas*/
+
+@media screen and (min-width:768px) and (max-width: 1199) {
+    .informacion-de-temperatura{
+        height: 500px;
+    }
+
+    
+}
+/*Estilos para el comportamineto en las  pantallas pequeñas*/
+
+@media screen and (max-width: 767px) {
+    .informacion-de-temperatura{
+        height: 40px;
+    }
+
+    
+}
